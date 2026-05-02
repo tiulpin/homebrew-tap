@@ -5,21 +5,21 @@
 class Termbook < Formula
   desc "Beautiful, browsable reference pages for your CLI"
   homepage "https://github.com/tiulpin/termbook"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tiulpin/termbook/releases/download/v0.2.0/termbook_0.2.0_macos_x86_64.tar.gz"
-      sha256 "bfa4d53f220d7876f9de400226ec47deda199cc3cdc91123625cc4442d3b8e3f"
+      url "https://github.com/tiulpin/termbook/releases/download/v0.3.0/termbook_0.3.0_macos_x86_64.tar.gz"
+      sha256 "08466951fdf75918a2cc6503ced457a985dfd1b395b32237c72d09a8f5ff9884"
 
       define_method(:install) do
         bin.install "termbook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tiulpin/termbook/releases/download/v0.2.0/termbook_0.2.0_macos_arm64.tar.gz"
-      sha256 "cd02f7b38bc9453debb83e5ad30426adbc8fb9baedfeab98a0bdcd4fc296c97b"
+      url "https://github.com/tiulpin/termbook/releases/download/v0.3.0/termbook_0.3.0_macos_arm64.tar.gz"
+      sha256 "eb31f4d7acba4a92b1a09faa8ceb576df6edd3a4daebb3db428b354fd1cbb7c2"
 
       define_method(:install) do
         bin.install "termbook"
@@ -29,15 +29,15 @@ class Termbook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiulpin/termbook/releases/download/v0.2.0/termbook_0.2.0_linux_x86_64.tar.gz"
-      sha256 "bc750bd7dadc25adefa57f55401493a0bfd874ecdd8acaab9154af92260de7b1"
+      url "https://github.com/tiulpin/termbook/releases/download/v0.3.0/termbook_0.3.0_linux_x86_64.tar.gz"
+      sha256 "f7867aa3c9218c922306d31ee18c8875ad53d97f4fbdbafc75824140de34251a"
       define_method(:install) do
         bin.install "termbook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tiulpin/termbook/releases/download/v0.2.0/termbook_0.2.0_linux_arm64.tar.gz"
-      sha256 "aa99ba1fcd0f3a333f09c99f54b09a2bf8a9b80b6265ed1d4be792836b163dde"
+      url "https://github.com/tiulpin/termbook/releases/download/v0.3.0/termbook_0.3.0_linux_arm64.tar.gz"
+      sha256 "3b914ac57144075e38f90c415ebe9bf457511b03840d4a50f1175c98c57e821c"
       define_method(:install) do
         bin.install "termbook"
       end

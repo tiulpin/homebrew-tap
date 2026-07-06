@@ -16,7 +16,7 @@ cask "yeti" do
   app "Yeti.app"
 
   # Developer ID-signed but not Apple-notarized: strip the download quarantine so
-  # Gatekeeper doesnt block first launch. Remove once the dmg is notarized.
+  # Gatekeeper does not block first launch. Remove once the dmg is notarized.
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Yeti.app"]

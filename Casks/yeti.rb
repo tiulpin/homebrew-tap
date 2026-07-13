@@ -1,6 +1,6 @@
 cask "yeti" do
-  version "0.6.0"
-  sha256 "9b1179e020494443231bb171571c8d8282b9cbe39197a54194a5a85430ae9daa"
+  version "0.6.1"
+  sha256 "730afc97b934f014e7af8317aaf17237585a2b91770313e793376cec1fc20c64"
 
   url "https://yeti-releases.s3.eu-west-1.amazonaws.com/v#{version}/Yeti_#{version}_aarch64.dmg"
   name "Yeti"

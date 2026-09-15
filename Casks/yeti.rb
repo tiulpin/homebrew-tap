@@ -7,9 +7,6 @@ cask "yeti" do
   desc "Fast, local-first desktop client for YouTrack"
   homepage "https://github.com/JetBrains/yeti"
 
-  # Apple Silicon only; the app self-updates in place via the in-app Tauri updater,
-  # so Homebrew leaves upgrades to it.
-  depends_on macos: :catalina
   depends_on arch: :arm64
   auto_updates true
 

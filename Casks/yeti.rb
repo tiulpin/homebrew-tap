@@ -3,11 +3,6 @@ cask "yeti" do
   auto_updates true
   depends_on arch: :arm64
   depends_on macos: :monterey
-  # Homebrew expands appdir at install time.
-  postflight_steps do
-    run "/usr/bin/xattr",
-        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Yeti.app"]
-  end
 
   version "0.11.6"
 

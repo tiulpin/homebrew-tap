@@ -9,7 +9,7 @@ cask "yeti" do
         args: ["-dr", "com.apple.quarantine", "{{appdir}}/Yeti.app"]
   end
 
-  version "0.11.4"
+  version "0.11.6"
 
   on_macos do
     app "Yeti.app"
@@ -17,7 +17,7 @@ cask "yeti" do
 
   on_macos do
     on_arm do
-      sha256 "8a9820a8dfaf5e632b5b8b171d3ee98ea101097f9effaeb24ce333067a34a70c"
+      sha256 "b09193a9610c4851517c77f16cc879159ecbd94a4be5240c259ac7d4e2a98f87"
       url "https://yeti-releases.s3.eu-west-1.amazonaws.com/v#{version}/Yeti_#{version}_aarch64.dmg"
     end
   end

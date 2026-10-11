@@ -4,7 +4,7 @@ cask "yeti" do
   depends_on arch: :arm64
   depends_on macos: :monterey
 
-  version "0.11.6"
+  version "0.11.7"
 
   on_macos do
     app "Yeti.app"
@@ -12,7 +12,7 @@ cask "yeti" do
 
   on_macos do
     on_arm do
-      sha256 "b09193a9610c4851517c77f16cc879159ecbd94a4be5240c259ac7d4e2a98f87"
+      sha256 "bc0b9cbb3dc72a7833b0710e3374bcbe750ebfa9dec0dafffdbbdc081806f165"
       url "https://yeti-releases.s3.eu-west-1.amazonaws.com/v#{version}/Yeti_#{version}_aarch64.dmg"
     end
   end

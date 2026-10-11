@@ -3,13 +3,8 @@ cask "yeti-alpha" do
   auto_updates true
   depends_on arch: :arm64
   depends_on macos: :monterey
-  # Homebrew expands appdir at install time.
-  postflight_steps do
-    run "/usr/bin/xattr",
-        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Yeti Alpha.app"]
-  end
 
-  version "0.11.1-alpha.20261010.95.1"
+  version "0.11.8-alpha.20261011.111.1"
 
   on_macos do
     app "Yeti Alpha.app"
@@ -17,7 +12,7 @@ cask "yeti-alpha" do
 
   on_macos do
     on_arm do
-      sha256 "3010cb2b1f7f834dba6f0b52f301d12e9dca7626c04014daceb6d62eead34728"
+      sha256 "8a1b9a3b6f07fd0b5c682ca5a1be3722528280e0591b5fe009af4b78ffb5c072"
       url "https://yeti-releases.s3.eu-west-1.amazonaws.com/alpha/v#{version}/Yeti-Alpha_#{version}_aarch64.dmg"
     end
   end
